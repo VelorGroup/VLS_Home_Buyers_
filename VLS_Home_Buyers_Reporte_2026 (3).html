@@ -1,0 +1,531 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VLS Home Buyers LLC — 2026 YTD Financial Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#1F3864;--blue:#2E5496;--ink-soft:#3A4A66;--paper:#EDF0F5;--surface:#FFFFFF;--line:#DCE1EA;
+--muted:#5C6675;--soft:#8790A0;--pos:#2F6B4F;--pos-bg:#E7F0EA;--neg:#B0483B;--neg-bg:#F7E9E6;
+--warn:#A9761C;--warn-bg:#FBF1D8;--warn-l:#E7C97E;--navy-soft:#E7ECF5}
+html{scroll-behavior:smooth}
+body{font-family:"Inter",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased;padding:32px 20px 80px}
+.wrap{max-width:1040px;margin:0 auto}
+.n,.mono{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;color:var(--ink);line-height:1.1}
+.eyebrow{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}
+.hero{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:32px 36px;display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}
+.hero-l{min-width:280px}
+.hero-l h1{font-size:40px;font-weight:900;letter-spacing:-.01em;margin:8px 0 5px}
+.hero-l .sub{font-size:14.5px;color:var(--muted);font-weight:500}
+.hero-r{display:flex;flex-direction:column;align-items:flex-end;gap:15px;text-align:right}
+.hero-r .logo{width:150px;height:auto;display:block;border-radius:6px}
+.hero-r .meta{font-size:12.5px;color:var(--muted);line-height:1.7}
+.pchip{display:inline-block;margin-top:9px;background:var(--warn-bg);color:var(--warn);border:1px solid var(--warn-l);border-radius:999px;padding:5px 12px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.filter{position:sticky;top:0;z-index:20;background:rgba(237,240,245,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:12px 4px;margin:22px 0 0;display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.filter .fl{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin-right:6px}
+.pill{font-family:"Inter",sans-serif;font-size:12.5px;font-weight:500;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:7px;padding:6px 13px;cursor:pointer;transition:.15s}
+.pill:hover{border-color:var(--blue);color:var(--ink)}
+.pill.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pill:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:22px}
+.strip .cell{background:var(--surface);padding:20px 22px}
+.strip .k{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.strip .v{font-size:26px;font-weight:600;margin-top:8px;letter-spacing:-.02em}
+.strip .v.pos{color:var(--pos)} .strip .v.neg{color:var(--neg)}
+.strip .sub{font-size:11.5px;color:var(--muted);margin-top:4px} .strip .sub.warn{color:var(--warn)}
+.banner{background:var(--warn-bg);border:1px solid var(--warn-l);border-left:5px solid var(--warn);border-radius:10px;padding:18px 22px;margin-top:14px}
+.banner b{color:var(--warn);font-size:14px;display:block;margin-bottom:5px}
+.banner p{font-size:13px;color:#7c5a17} .banner p+p{margin-top:6px}
+section{margin-top:40px}
+.sec-h{display:flex;align-items:baseline;gap:14px;margin-bottom:16px}
+.sec-h h2{font-size:24px;font-weight:800}
+.sec-h .cnt{font-size:12.5px;color:var(--soft);margin-left:auto;font-family:"IBM Plex Mono"}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px 26px}
+.chart-box{position:relative;height:330px}
+#ledger{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+#ledger.single{grid-template-columns:1fr;max-width:600px}
+.mo{background:var(--surface);border:1px solid var(--line);border-radius:12px;border-left:5px solid var(--line);padding:20px 22px 18px}
+.mo.pos{border-left-color:var(--pos)} .mo.neg{border-left-color:var(--neg)}
+.mo-h{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px}
+.mo-h h3{font-size:21px;font-weight:700}
+.mo-net{text-align:right}
+.mo-net .lbl{font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);display:block}
+.net-v{font-family:"IBM Plex Mono";font-size:18px;font-weight:600}
+.net-v.p{color:var(--pos)} .net-v.n{color:var(--neg)}
+.mo-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.col-h{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600;padding-bottom:7px;margin-bottom:7px;border-bottom:1px solid var(--line)}
+.col-h .ct{font-family:"IBM Plex Mono";color:var(--ink);font-weight:600}
+.li{display:flex;justify-content:space-between;gap:8px;font-size:12.5px;padding:2.5px 0;color:var(--ink-soft)}
+.li .n{white-space:nowrap;color:var(--ink)}
+.li.pend{color:var(--warn)} .li.pend .n{color:var(--warn)}
+.li.muted{color:var(--soft);font-style:italic}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.chip{font-size:11px;font-weight:600;padding:4px 10px;border-radius:999px;border:1px solid}
+.chip.crit{background:var(--neg-bg);color:var(--neg);border-color:#e3c3bd}
+.chip.draw{background:var(--navy-soft);color:var(--blue);border-color:#c9d5ea}
+.chip.note{background:var(--warn-bg);color:var(--warn);border-color:var(--warn-l)}
+.chip.agg{background:#EFF1F4;color:var(--muted);border-color:var(--line)}
+.twoup{display:grid;grid-template-columns:1.05fr 1fr;gap:16px;align-items:start}
+.acc{border-bottom:1px solid var(--line)}
+.acc:last-child{border-bottom:none}
+.acc>summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 2px;font-size:12.5px}
+.acc>summary::-webkit-details-marker{display:none} .acc>summary::marker{content:""}
+.acc .sm-l{display:flex;align-items:center;gap:10px;color:var(--ink)}
+.chev{width:7px;height:7px;border-right:1.5px solid var(--soft);border-bottom:1.5px solid var(--soft);transform:rotate(-45deg);transition:transform .2s;flex:none}
+.acc[open] .chev{transform:rotate(45deg)}
+.cnt-b{font-size:10px;color:var(--soft);background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:1px 7px;font-family:"IBM Plex Mono"}
+.sm-v{font-family:"IBM Plex Mono";font-weight:600;color:var(--ink);white-space:nowrap}
+.acc .body{padding:2px 2px 12px 22px}
+.sub-tx{width:100%;border-collapse:collapse;font-size:11.5px}
+.sub-tx td{padding:5px 6px;border-bottom:1px dotted var(--line);color:var(--muted);vertical-align:top}
+.sub-tx td.d{font-family:"IBM Plex Mono";color:var(--soft);white-space:nowrap;width:78px}
+.sub-tx td.a{font-family:"IBM Plex Mono";text-align:right;white-space:nowrap;color:var(--ink)}
+.catrow{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 2px;font-size:12.5px;border-bottom:1px solid var(--line)}
+.catrow:last-child{border-bottom:none} .catrow .sm-l{color:var(--ink)}
+.plainrow{display:flex;justify-content:space-between;padding:11px 2px;font-size:12.5px;color:var(--warn);border-top:2px solid var(--line)}
+.plainrow .sm-v{color:var(--warn)}
+#pendSection .pend-note{font-size:12.5px;color:var(--muted);margin-bottom:14px;max-width:74ch}
+.pend-tbl{width:100%;border-collapse:collapse;font-size:12.5px}
+.pend-tbl th{text-align:left;font-family:"Inter";font-weight:600;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:0 8px 9px;border-bottom:1px solid var(--line)}
+.pend-tbl th.r,.pend-tbl td.r{text-align:right}
+.pend-tbl td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+.pend-tbl td.dt{font-family:"IBM Plex Mono";color:var(--soft);white-space:nowrap}
+.pend-tbl td.am{font-family:"IBM Plex Mono";white-space:nowrap;font-weight:600}
+.pend-tbl td.am.dep{color:var(--pos)} .pend-tbl td.am.exp{color:var(--neg)}
+.kindtag{font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;padding:2px 7px;border-radius:4px;font-weight:600}
+.kindtag.dep{background:var(--pos-bg);color:var(--pos)} .kindtag.exp{background:var(--neg-bg);color:var(--neg)}
+details.pend-d>summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:14px 18px;background:var(--warn-bg);border:1px solid var(--warn-l);border-radius:8px;font-size:13px;font-weight:600;color:var(--warn)}
+details.pend-d>summary::-webkit-details-marker{display:none}
+details.pend-d[open]>summary{border-radius:8px 8px 0 0}
+details.pend-d .pd-body{border:1px solid var(--warn-l);border-top:none;border-radius:0 0 8px 8px;padding:18px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.kpi{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px 24px}
+.kpi .kv{font-size:30px;font-weight:600;font-family:"IBM Plex Mono";letter-spacing:-.02em}
+.kpi .kk{font-size:12.5px;color:var(--muted);margin-top:6px}
+.rw-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}
+.rw-calc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px 26px}
+.rw-line{display:flex;justify-content:space-between;align-items:center;padding:11px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.rw-line .rl{color:var(--ink)} .rw-line .rv{font-family:"IBM Plex Mono";font-weight:600}
+.rw-line.tot{border-bottom:none;border-top:2px solid var(--ink);margin-top:4px;padding-top:13px}
+.rw-line.tot .rl{font-weight:600;font-size:14.5px} .rw-line.tot .rv{font-size:17px}
+.sal-in{font-family:"IBM Plex Mono";font-size:13.5px;font-weight:600;width:120px;text-align:right;border:1px solid var(--blue);border-radius:6px;padding:6px 9px;background:var(--navy-soft);color:var(--ink)}
+.sal-in:focus{outline:2px solid var(--blue);outline-offset:1px}
+.rw-hint{font-size:11px;color:var(--soft);margin-top:3px}
+.rw-out{background:var(--ink);color:#fff;border-radius:12px;padding:28px 26px;display:flex;flex-direction:column;justify-content:center}
+.rw-out .ro-eye{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#AEC2E0;margin-bottom:10px}
+.rw-out .ro-big{font-family:"Fraunces";font-size:64px;font-weight:900;line-height:1;color:#fff}
+.rw-out .ro-u{font-size:15px;color:#C9D5EA;margin-top:4px}
+.rw-out .ro-sub{font-size:12.5px;color:#C9D5EA;margin-top:16px;line-height:1.6}
+.rw-scen-h{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:22px 0 12px;font-weight:600}
+.rw-scen{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.scen{border:1px solid var(--line);border-radius:12px;padding:18px 16px;text-align:center;background:var(--surface)}
+.scen.hi{border-color:var(--blue);background:var(--navy-soft)}
+.scen .sc-l{font-size:11.5px;color:var(--muted);min-height:30px}
+.scen .sc-m{font-family:"Fraunces";font-size:42px;font-weight:900;line-height:1;margin:8px 0 2px;color:var(--ink)}
+.scen.hi .sc-m{color:var(--blue)}
+.scen .sc-u{font-size:10px;color:var(--soft);text-transform:uppercase;letter-spacing:.08em}
+.flist{list-style:none}
+.flist li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:flex-start}
+.flist li:last-child{border-bottom:none}
+.sev{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:5px;white-space:nowrap;margin-top:1px}
+.sev.crit{background:var(--neg-bg);color:var(--neg)} .sev.note{background:var(--warn-bg);color:var(--warn)}
+.flist .ft{font-size:13.5px;color:var(--ink-soft)} .flist .ft b{color:var(--ink)}
+ol.act{list-style:none;counter-reset:a}
+ol.act li{counter-increment:a;position:relative;padding:14px 0 14px 46px;border-bottom:1px solid var(--line)}
+ol.act li:last-child{border-bottom:none}
+ol.act li::before{content:counter(a);position:absolute;left:0;top:12px;width:30px;height:30px;background:var(--ink);color:#fff;border-radius:8px;display:grid;place-items:center;font-family:"IBM Plex Mono";font-size:14px;font-weight:600}
+ol.act .at{font-weight:600;font-size:14px;color:var(--ink)} ol.act .ad{font-size:13px;color:var(--muted);margin-top:2px}
+.notes{font-size:12.5px;color:var(--muted)} .notes li{margin:6px 0 6px 18px}
+.foot{margin-top:44px;padding-top:20px;border-top:1px solid var(--line);font-size:11.5px;color:var(--soft);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.hide{display:none!important}
+@media (max-width:780px){
+body{padding:18px 12px 60px}
+.hero{padding:24px}.hero-l h1{font-size:30px}.hero-r{align-items:flex-start;text-align:left}
+.strip{grid-template-columns:1fr 1fr}
+#ledger,.twoup,.kpis,.rw-grid,.rw-scen{grid-template-columns:1fr}
+.mo-cols{grid-template-columns:1fr;gap:12px}.rw-out .ro-big{font-size:52px}}
+
+.cr-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:14px 0 18px}
+.cr-kpis .kv{font-size:26px}
+.cr-two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px;align-items:start}
+.cr-h{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:0 0 10px;font-weight:600}
+.cr-lead{font-size:14px;color:var(--ink-soft);max-width:92ch}
+.cr-tblw{overflow-x:auto;margin-top:16px}
+.cr-tbl{width:100%;border-collapse:collapse;font-size:12.5px}
+.cr-tbl th{text-align:left;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);font-weight:600;padding:8px 10px;border-bottom:1px solid var(--line)}
+.cr-tbl td{padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink-soft)}
+.cr-tbl td:first-child{color:var(--ink);font-weight:600}
+.cr-tbl td.r,.cr-tbl th.r{text-align:right;font-family:"IBM Plex Mono",monospace;white-space:nowrap}
+.cr-tbl tr.tot td{font-weight:700;color:var(--ink);border-top:2px solid var(--line)}
+.cr-chart{position:relative;height:300px}
+.cr-foot{font-size:11.5px;color:var(--muted);margin-top:12px;max-width:100ch}
+.sev.ok{background:var(--pos-bg);color:var(--pos)}
+.sev.info{background:var(--navy-soft);color:var(--blue)}
+.tg{font-size:9.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:2px 6px;border-radius:4px;margin-left:6px;vertical-align:1px}
+.tg.f{background:var(--pos-bg);color:var(--pos)} .tg.e{background:var(--warn-bg);color:var(--warn)}
+@media(max-width:760px){.cr-kpis{grid-template-columns:1fr 1fr}.cr-two{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+<header class="hero">
+ <div class="hero-l">
+  <div class="eyebrow">Management Report · Prepared by Velor Group</div>
+  <h1>VLS Home Buyers LLC</h1>
+  <div class="sub">2026 Year-to-Date · January – September 30 · Real-estate wholesaling</div>
+  <span class="pchip">Draft · pending items unresolved</span>
+ </div>
+ <div class="hero-r">
+  <img class="logo" src="data:image/png;base64,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" alt="Velor Group">
+  <div class="meta">As of <b>September 30, 2026</b><br>Books: QuickBooks Online<br>Currency: USD · Cash basis</div>
+ </div>
+</header>
+
+<div class="strip">
+ <div class="cell"><div class="k">Revenue identified</div><div class="v pos">$194,453</div><div class="sub warn">incl. $38,393 deposit, source pending</div></div>
+ <div class="cell"><div class="k">Expenses identified</div><div class="v neg">$68,174</div><div class="sub warn">+$34,079 pending (33%)</div></div>
+ <div class="cell"><div class="k">Net income YTD</div><div class="v pos">$92,200</div><div class="sub">preliminary · pre-tax</div></div>
+ <div class="cell"><div class="k">Cash on hand</div><div class="v">$21,273</div><div class="sub warn">3 accounts · Savings overdrawn</div></div>
+</div>
+
+<div class="banner">
+ <b>Read this first — the numbers are directional, not final</b>
+ <p>About <b>$34,079</b> of expenses (33% of the total) and <b>$38,393</b> of deposits are still uncategorized — <b>33 items</b> waiting on documentation, all dated January–July. Until they are classified, category totals and net income will move.</p>
+ <p>Chase statements (May 2024 – Sep 2026) are now on file and reconcile, but the <b>Chase Freedom</b> card is not yet booked, so its charges are not in these expenses — see <a href="#creditSection">Credit profile</a> below. July and August are shown combined, and July–September figures come from QuickBooks summary reports at the category level (no transaction-level detail yet for those months).</p>
+</div>
+
+<div class="filter" id="filter"><span class="fl">View</span></div>
+
+<section id="trendSection">
+ <div class="sec-h"><h2>The shape of the year</h2></div>
+ <div class="panel"><div class="chart-box"><canvas id="trend"></canvas></div></div>
+</section>
+
+<section id="ledgerSection">
+ <div class="sec-h"><h2>Month by month</h2><span class="cnt" id="ledgerCnt"></span></div>
+ <div id="ledger"></div>
+</section>
+
+<section id="pendSection">
+ <div class="sec-h"><h2>What's still open</h2><span class="cnt" id="pendCnt"></span></div>
+ <div id="pendMount"></div>
+</section>
+
+<section id="expSection">
+ <div class="sec-h"><h2>Where the money went</h2><span class="cnt" id="expScope"></span></div>
+ <div class="twoup">
+  <div class="panel"><div id="expList"></div></div>
+  <div class="panel"><div class="chart-box" style="height:300px"><canvas id="donut"></canvas></div></div>
+ </div>
+</section>
+
+<section id="kpiSection">
+ <div class="sec-h"><h2>Deal performance</h2></div>
+ <div class="kpis">
+  <div class="kpi"><div class="kv pos">$193,862</div><div class="kk">Total income YTD — $155,469 assignment fees + $38,393 uncategorized (pending classification); plus $590 other income</div></div>
+  <div class="kpi"><div class="kv">$20,795</div><div class="kk">Average fee per deal (6 deals closed Jan–Jun)</div></div>
+  <div class="kpi"><div class="kv">$92,200</div><div class="kk">Net income YTD — $86,264 taken as owner draws</div></div>
+ </div>
+</section>
+
+<section id="rwSection">
+ <div class="sec-h"><h2>Cash runway</h2></div>
+ <div class="rw-grid">
+  <div class="rw-calc">
+   <div class="rw-line"><span class="rl">Cash on hand (Sep 30)</span><span class="rv pos">$21,273</span></div>
+   <div class="rw-line"><span class="rl">Fixed business costs / mo</span><span class="rv neg">−$5,999</span></div>
+   <div class="rw-line"><span class="rl">Owner salary / mo <div class="rw-hint">editable — set your target draw</div></span><input class="sal-in n" id="rwSalary" type="number" value="4000" min="0" step="500"></div>
+   <div class="rw-line tot"><span class="rl">Total monthly burn</span><span class="rv neg" id="rwBurn"></span></div>
+  </div>
+  <div class="rw-out">
+   <div class="ro-eye">Runway at that burn</div>
+   <div class="ro-big" id="rwMonths"></div><div class="ro-u" id="rwUnit">months of cash</div>
+   <div class="ro-sub" id="rwNote"></div>
+  </div>
+ </div>
+ <div class="rw-scen-h">If draws stay at recent levels</div>
+ <div class="rw-scen" id="scen"></div>
+</section>
+
+
+<section id="creditSection">
+ <div class="sec-h"><h2>Credit profile — cards &amp; credit health</h2><span class="cnt">Chase · PayPal Mastercard</span></div>
+ <div class="panel">
+  <p class="cr-lead"><b>Bottom line.</b> Both cards in this file are personal accounts: <b>Chase Freedom</b> (cardholder Olena Salyuk) and <b>PayPal Cashback Mastercard</b> (cardholder Vadym Salyuk, issued by Synchrony). Their activity reports to the cardholders' personal credit, not to VLS Home Buyers LLC. No card or loan in the LLC's own name appears in the records provided, so the business has little or no documented credit history of its own yet. <span class="tg f">Fact</span></p>
+  <div class="cr-kpis">
+   <div class="kpi"><div class="kv pos">3.3%</div><div class="kk">Chase utilization at the latest statement (Sep 18, 2026): $815 of $24,800</div></div>
+   <div class="kpi"><div class="kv pos">$0</div><div class="kk">Chase interest + fees in 2026 YTD — vs $2,580 paid Jul 2024 – Dec 2025</div></div>
+   <div class="kpi"><div class="kv neg">~62%</div><div class="kk">PayPal Mastercard utilization on the Sep 30 books balance ($15,223 vs $24,500 limit) <span class="tg e">Estimate</span></div></div>
+   <div class="kpi"><div class="kv pos">$0</div><div class="kk">Past due on all 28 Chase statements; no late fees posted</div></div>
+  </div>
+  <div class="cr-h">Chase — balance at statement close as % of credit line</div>
+  <div class="cr-chart"><canvas id="crChart"></canvas></div>
+  <p class="cr-foot">All 28 statement closes plotted from the statements themselves. Dots: red = 30% or more, amber = 10–30%, green = under 10%. Credit line: $18,800 (Jun 2024) → $21,800 (Jul 2024) → $24,800 (May 2025). 10 of 28 closes were at or above 30% (peak 80% in Oct-24); since Aug 2025 only 1 of 14 — the Feb 2026 spike came from two large travel charges ($10,938), paid in full in March.</p>
+  <div class="cr-h" style="margin-top:22px">How the Chase card has been used — all 28 statements, May 2024 – Sep 2026</div>
+  <div class="cr-chart" style="height:280px"><canvas id="crUse"></canvas></div>
+  <div class="cr-tblw"><table class="cr-tbl">
+   <thead><tr><th>Statement period</th><th class="r">Purchases</th><th class="r">Business-type</th><th class="r">Share</th><th class="r">Ambiguous</th><th class="r">Household / other</th></tr></thead>
+   <tbody><tr class=""><td>Before the LLC (cycles to Sep 18, 2024)</td><td class="r">$22,643</td><td class="r">$15,780</td><td class="r">70%</td><td class="r">$1,960</td><td class="r">$4,904</td></tr><tr class=""><td>Oct 2024 (formation month)</td><td class="r">$5,032</td><td class="r">$2,785</td><td class="r">55%</td><td class="r">$416</td><td class="r">$1,831</td></tr><tr class=""><td>Nov – Dec 2024</td><td class="r">$7,161</td><td class="r">$4,667</td><td class="r">65%</td><td class="r">$734</td><td class="r">$1,760</td></tr><tr class=""><td>2025</td><td class="r">$65,371</td><td class="r">$30,998</td><td class="r">47%</td><td class="r">$4,556</td><td class="r">$29,817</td></tr><tr class=""><td>2026 YTD (to Sep 18)</td><td class="r">$34,789</td><td class="r">$611</td><td class="r">2%</td><td class="r">$4,060</td><td class="r">$30,118</td></tr><tr class="tot"><td>Total, 28 statements</td><td class="r">$134,996</td><td class="r">$54,841</td><td class="r">41%</td><td class="r">$11,726</td><td class="r">$68,429</td></tr></tbody></table></div>
+  <p class="cr-foot"><span class="tg e">Estimate</span> Classification is by merchant type: <b>business-type</b> = lead data, CRM and dialers, marketing and coaching, contractor-platform payments, business software, LLC formation fees; <b>ambiguous</b> = travel, storage, internet, equipment rental, insurance and similar; <b>household / other</b> = everything else (includes $979 of RV-rental charges; per VAD the RV business is a separate entity). Purchases exclude cash advances ($2,228). Each statement reconciles to the penny and each new balance equals the next statement's previous balance (28 of 28).</p>
+  <div class="cr-tblw"><table class="cr-tbl">
+   <thead><tr><th></th><th>Chase Freedom</th><th>PayPal Cashback Mastercard</th></tr></thead>
+   <tbody>
+    <tr><td>Account / cardholder</td><td>…1513 through the Jun 2026 statement; replaced as a “lost/stolen account” on Jun 25, 2026 (…3157) and again by Aug 2026 (…6640) · Olena Salyuk</td><td>…5920 · Vadym Salyuk (Synchrony)</td></tr>
+    <tr><td>Reports to</td><td>Cardholder's personal credit file</td><td>Cardholder's personal credit file</td></tr>
+    <tr><td>Credit limit</td><td>$24,800</td><td>$24,500 (Jun 2026 statement; a line increase was announced, so it may be higher now)</td></tr>
+    <tr><td>Latest balance</td><td>$815 (statement Sep 18, 2026)</td><td>$5,178 (statement Jun 9, 2026) · books: $15,223 at Sep 30</td></tr>
+    <tr><td>Utilization</td><td>3.3%</td><td>21% at the Jun 9 statement · ~62% on the Sep 30 books balance <span class="tg e">Estimate</span></td></tr>
+    <tr><td>APR purchases / cash</td><td>22.49% / 28.49%</td><td>18.49% / 33.24%</td></tr>
+    <tr><td>Interest + fees</td><td>2024: $1,356 · 2025: $1,224 · 2026 YTD: $0</td><td>2026 YTD: $0 (to Jun 9)</td></tr>
+    <tr><td>Payment pattern</td><td>Past due $0 on every statement; prior balance paid in full each cycle since Aug 2025</td><td>Prior balance paid in full (Jun 2026)</td></tr>
+    <tr><td>In QuickBooks today</td><td>−$46,323 (payments only; charges not booked)</td><td>$15,223 liability</td></tr>
+   </tbody></table></div>
+  <div class="cr-two">
+   <div>
+    <div class="cr-h">Personal credit — what the statements show</div>
+    <ul class="flist">
+     <li><span class="sev ok">Helps</span><div class="ft"><b>Clean payment record.</b> No past-due amounts or late fees on any of the 28 statements. <span class="tg f">Fact</span></div></li>
+     <li><span class="sev ok">Helps</span><div class="ft"><b>Pay-in-full habit since Aug 2025</b> eliminated card interest ($0 in 2026), and Chase raised the line twice. <span class="tg f">Fact</span></div></li>
+     <li><span class="sev crit">Hurts</span><div class="ft"><b>Balances swing around the statement date.</b> Large balances build (up to 80% in Oct-24) and are paid down after the statement closes. Issuers generally report the statement balance, so reported utilization can look high even when the bill is paid in full. <span class="tg f">Fact</span></div></li>
+     <li><span class="sev crit">Hurts</span><div class="ft"><b>Cash advances in 2025:</b> $2,228 advanced cost $111 in fees (5%) plus a 29.24% APR. <span class="tg f">Fact</span></div></li>
+     <li><span class="sev note">Watch</span><div class="ft"><b>PayPal Mastercard at ~62%</b> on the books balance (peaked at 76% on Aug 31). Book balances are not the bureau-reported statement balances. <span class="tg e">Estimate</span></div></li>
+    </ul>
+   </div>
+   <div>
+    <div class="cr-h">Business credit — what is missing</div>
+    <ul class="flist">
+     <li><span class="sev info">Basis</span><div class="ft">LLC formed Oct 14, 2024; EIN issued Oct 15, 2024; Operating Agreement on file. <span class="tg f">Fact</span></div></li>
+     <li><span class="sev crit">Gap</span><div class="ft"><b>No business-name credit account documented.</b> Business spending (CRM, lead data, marketing, contractors) has run through personal cards, which generally build the cardholder's file rather than the LLC's. If a business card or loan exists, please send the statements.</div></li>
+     <li><span class="sev crit">Gap</span><div class="ft"><b>Books are not lender-ready yet:</b> $72,472 uncategorized ($38,393 income + $34,079 expenses) and the Savings account is overdrawn (−$2,349). Lenders typically ask for a clean P&amp;L and balance sheet.</div></li>
+     <li><span class="sev note">Watch</span><div class="ft">The Operating Agreement (Sec. III.5) calls for keeping LLC and personal funds separate. Moving business charges to an LLC-named card/account supports both credit-building and that separation. Confirm specifics with counsel and the CPA.</div></li>
+    </ul>
+   </div>
+  </div>
+  <div class="cr-h" style="margin-top:22px">What the Chase statements change in this report</div>
+  <ul class="flist">
+   <li><span class="sev crit">Books</span><div class="ft"><b>QuickBooks' Chase line (−$46,323) is not a real balance</b> — it holds payments only. The card's statement balance is $815 (Sep 18, 2026). Reconstruction will replace it. <span class="tg f">Fact</span></div></li>
+   <li><span class="sev crit">Books</span><div class="ft"><b>Payments don't match:</b> the statements show $139,766 in payments and credits to the card since May 2024; QuickBooks records $46,323 paid from VLS accounts (~33%). The rest was paid from accounts that are not in these books. <span class="tg f">Fact</span></div></li>
+   <li><span class="sev crit">Books</span><div class="ft"><b>2026 YTD impact is small; 2024–2025 is not.</b> Business-type charges were $611 in 2026 vs $30,998 in 2025 and $23,232 in 2024 (of which $15,780 predate the LLC). Booking the 2026 charges would lower YTD net income from $92,200 to about $91,589, or $87,529 if all ambiguous items were also business. The 2024–2025 amounts go to the CPA. <span class="tg e">Estimate</span></div></li>
+   <li><span class="sev note">Books</span><div class="ft"><b>Owner draws:</b> business-type charges since the LLC was formed total ≈$39,061, versus $46,323 paid from VLS accounts — so roughly $7,263 of those payments may be owner draws, depending on which payments came from VLS and on the ambiguous items. <span class="tg e">Estimate</span></div></li>
+   <li><span class="sev note">Timing</span><div class="ft"><b>Statements start May 2024; the LLC was formed Oct 14, 2024.</b> Charges before that date predate the entity; how they are treated is a CPA decision. LLC formation fees ($526, Oct 2024) were paid on this card.</div></li>
+   <li><span class="sev note">Records</span><div class="ft"><b>Card replaced twice.</b> Chase marked transactions as transferred from a “lost/stolen account” on Jun 25, 2026 (…3157) and again by Aug 2026 (…6640). Worth confirming the card was not compromised and mapping the new numbers in QuickBooks. <span class="tg f">Fact</span></div></li>
+   <li><span class="sev note">Records</span><div class="ft"><b>Money-transfer charges:</b> PAYSEND appears Nov 2024 – Sep 2025 for about $2,729 (including $2,228 as cash advances). Please tell us who these were for — if they were contractor payments, they belong in contract-labor and W-8BEN records. <span class="tg f">Fact</span></div></li>
+  </ul>
+  <div class="cr-h" style="margin-top:22px">Action plan — credit</div>
+  <div class="cr-tblw"><table class="cr-tbl">
+   <thead><tr><th>Action</th><th>Lever</th><th>Estimated impact <span class="tg e">Estimate</span></th><th>Owner</th><th>Timing</th></tr></thead>
+   <tbody>
+    <tr><td>Pay balances down before the statement closing date (Chase: 18th · PayPal Mastercard: 9th)</td><td>Working capital</td><td>To be under 30% on the Mastercard ($24,500 limit) the balance at close would need to be ≈ $7,350 or less (≈ $7,873 below today's books balance); under 10% ≈ $2,450. Check against cash first — see Cash runway.</td><td>Vadym</td><td>Before next closing</td></tr>
+    <tr><td>Avoid cash advances; use bank transfer or wire</td><td>Cost</td><td>2025: $111 in fees on $2,228 (5%) plus 29.24% APR — avoidable.</td><td>Cardholder</td><td>Ongoing</td></tr>
+    <tr><td>Put recurring business subscriptions on an LLC-named card or the LLC bank account</td><td>Process</td><td>Starts a business credit history; takes personal-card balances out of the LLC's books. Business-type spend on Chase already fell from 47% (2025) to 2% (2026).</td><td>Vadym</td><td>30–60 days</td></tr>
+    <tr><td>Finish the books: classify the $38,393 deposit and $34,079 expenses; book Chase (28 statements ready)</td><td>Reporting</td><td>Lender-ready P&amp;L and balance sheet; replaces estimates with facts.</td><td>Velor + Vadym</td><td>Next close</td></tr>
+    <tr><td>Keep bank balances positive; resolve the Savings overdraft (−$2,349)</td><td>Banking history</td><td>Avoids overdraft marks in the business's banking history.</td><td>Vadym</td><td>Now</td></tr>
+   </tbody></table></div>
+  <p class="cr-foot"><b>Basis.</b> All 28 Chase statements (May 2024 – Sep 2026) read in full, plus the PayPal Mastercard statement of Jun 9, 2026; other PayPal statements not yet reviewed. Management analysis only — not credit repair, financial, tax or legal advice. Scoring factors (payment history, utilization, account age, mix, inquiries) are described as general industry practice; no score outcome is guaranteed. Anything with tax effect goes to the client's CPA.</p>
+ </div>
+</section>
+
+<section id="flagSection">
+ <div class="sec-h"><h2>Flags & clean-up items</h2></div>
+ <div class="panel"><ul class="flist">
+  <li><span class="sev crit">Critical</span><div class="ft"><b>Uncategorized deposits — $38,393.</b> A single April deposit sits in Uncategorized Income. This is the largest driver of uncertainty in revenue; it needs a source (deal proceeds, transfer, or capital).</div></li>
+  <li><span class="sev crit">Critical</span><div class="ft"><b>Uncategorized expenses — $34,079 across 32 payments.</b> Roughly a third of all spending has no category. Receipts or a walk-through will let us book these correctly.</div></li>
+  <li><span class="sev crit">Critical</span><div class="ft"><b>Chase Freedom not yet booked.</b> All 28 statements (May 2024 – Sep 2026) are on file and reconcile. QuickBooks shows only payments (−$46,323) while the card's statement balance is $815. Business-type charges (≈$54,841 over the period, mostly 2024–2025) are not in these expenses; for 2026 YTD the effect is small (≈$611–$4,671, estimate).</div></li>
+  <li><span class="sev note">Watch</span><div class="ft"><b>Savings account overdrawn — −$2,349 at Sep 30.</b> The savings account went negative in September and has not recovered. Worth confirming with the bank whether this is a real overdraft or a timing/classification issue.</div></li>
+  <li><span class="sev note">Watch</span><div class="ft"><b>PayPal Mastercard balance is $15,223 at Sep 30 (was $5,178 in June).</b> The card is in Vadym Salyuk's personal name (limit $24,500 at Jun 2026), so the balance is roughly 62% utilization on his personal credit — see Credit profile.</div></li>
+  <li><span class="sev note">Watch</span><div class="ft"><b>Revenue is 100% assignment fees, and lumpy.</b> A few closings carry the whole year — three of the nine months produced almost all the income. Normal for wholesaling, but it makes cash timing the key risk.</div></li>
+ </ul></div>
+</section>
+
+<section id="actSection">
+ <div class="sec-h"><h2>To move from draft to final</h2></div>
+ <div class="panel"><ol class="act">
+  <li><div class="at">Identify the April deposit ($38,393)</div><div class="ad">The single biggest open item on the revenue side. One answer clears most of the uncertainty in the top line.</div></li>
+  <li><div class="at">Categorize the 32 pending expenses ($34,079)</div><div class="ad">Provide receipts or a quick review call. This sharpens every expense category and the final net income.</div></li>
+  <li><div class="at">Reconstruct Chase from the statements</div><div class="ad">All 28 statements are in. Next we book them — business-type charges to expenses, household charges to owner draws. We need two answers: who pays and uses the card, and what the PAYSEND transfers were for.</div></li>
+  <li><div class="at">Confirm the Savings overdraft</div><div class="ad">Check whether the −$2,349 is a genuine overdraft or a timing issue to correct before month-end close.</div></li>
+  <li><div class="at">Refresh July–September at transaction level</div><div class="ad">Export updated registers so those months get the same line-by-line detail — and July and August can be split apart.</div></li>
+ </ol></div>
+</section>
+
+<section id="notesSection">
+ <div class="sec-h"><h2>Notes & basis of preparation</h2></div>
+ <div class="panel notes"><ul>
+  <li>Figures reflect QuickBooks Online as of <b>September 30, 2026</b>, cash basis. Prepared by Velor Group as a management report — not a tax filing or audited statement.</li>
+  <li><b>January–June</b> is built from bank/card registers at the transaction level. <b>July–September</b> is taken from QuickBooks Profit &amp; Loss summary reports (category totals). July and August are combined because no end-of-July report was available to separate them.</li>
+  <li>Owner draws ($86,264 YTD) and inter-account transfers are excluded from income and expenses. Draws in July–September were minimal (~$2,452).</li>
+  <li>"Pending / uncategorized" means the transaction is recorded in the bank data but not yet assigned to a category — it is not missing money, only unclassified.</li>
+  <li>Tax treatment, entity elections, and 1099/W-8 handling are the client CPA's decision. Velor prepares the source books only.</li>
+ </ul></div>
+</section>
+
+<div class="foot"><span>VLS Home Buyers LLC · 2026 YTD management report</span><span>Prepared by Velor Group · accounting@velorgroup.co</span></div>
+</div><script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+const D={"MONTHS": {"01": {"name": "January", "inc": {"Assignment fees": 65532.39}, "incPend": 0.0, "exp": {"Bank & wire fees": 60.0, "Virtual assistants": 2323.07, "Software & subscriptions": 1034.09, "Advertising & marketing": 1495.0, "Office supplies": 43.19, "Meals": 23.18}, "expPend": 12471.06, "draw": 12677.0}, "02": {"name": "February", "inc": {"Assignment fees": 43388.86}, "incPend": 0.0, "exp": {"Bank & wire fees": 50.0, "Rehab & materials": 53.33, "Travel": 501.69, "Deal subcontractors": 7788.0, "Virtual assistants": 1407.55, "Software & subscriptions": 834.42, "Education & coaching": 747.0, "Advertising & marketing": 1495.0}, "expPend": 4559.67, "draw": 27494.5}, "03": {"name": "March", "inc": {"Interest": 0.03, "Refunds & rebates": 244.43}, "incPend": 0.0, "exp": {"Rehab & materials": 2396.33, "Deal subcontractors": 1410.0, "Virtual assistants": 2047.14, "Education & coaching": 1014.54, "Software & subscriptions": 838.06, "Advertising & marketing": 1495.0, "Inspections & due diligence": 293.67, "Travel": 446.69}, "expPend": 2614.44, "draw": 26591.08}, "04": {"name": "April", "inc": {"Assignment fees": 15849.0, "Refunds & rebates": 345.91}, "incPend": 38393.0, "exp": {"Shipping": 31.6, "Bank & wire fees": 45.3, "Virtual assistants": 2522.28, "Software & subscriptions": 947.87, "Rehab & materials": 627.67, "Meals": 41.55, "Inspections & due diligence": 43.67, "Education & coaching": 747.0, "Advertising & marketing": 1495.0}, "expPend": 4518.86, "draw": 16697.48}, "05": {"name": "May", "inc": {}, "incPend": 0.0, "exp": {"Virtual assistants": 1314.56, "Software & subscriptions": 619.52, "Education & coaching": 944.0, "Office supplies": 218.61, "Travel": 241.88, "Inspections & due diligence": 43.67, "Advertising & marketing": 1495.0, "Meals": 46.6}, "expPend": 916.88, "draw": 351.75}, "06": {"name": "June", "inc": {"Interest": 0.01}, "incPend": 0.0, "exp": {"Meals": 5.74, "Virtual assistants": 558.61, "Software & subscriptions": 478.53, "Advertising & marketing": 1495.0, "Office supplies": 8.35}, "expPend": 8852.62, "draw": 0.0}, "0708": {"name": "July \u2013 August", "inc": {"Assignment fees": 7000.0}, "incPend": 0.0, "exp": {"Advertising & marketing": 5980.0, "Bank & wire fees": 150.0, "Virtual assistants": 5259.59, "Education & coaching": 1835.0, "Inspections & due diligence": 174.68, "Office supplies": 226.96, "Software & subscriptions": 5320.46, "Travel": 110.03, "Deal subcontractors": 1000.0, "Rehab & materials": 14.01}, "expPend": 145.17, "draw": 351.75}, "09": {"name": "September", "inc": {"Assignment fees": 23699.0}, "incPend": 0.0, "exp": {"Bank & wire fees": 20.0, "Virtual assistants": 3796.1, "Software & subscriptions": 819.3, "Advertising & marketing": 1495.0, "Inspections & due diligence": 43.67, "Office supplies": 160.1}, "expPend": 0.0, "draw": 2100.0}}, "TOTALS": {"incId": 156059.63, "incPend": 38393.0, "expId": 68173.86, "expPend": 34078.7, "net": 92200.08, "draw": 86263.56, "cash": 21273.14, "deals": 6, "avgDeal": 20795.04, "assignYTD": 155469.25, "expCats": {"Virtual assistants": 19228.9, "Advertising & marketing": 16445.0, "Software & subscriptions": 10892.25, "Deal subcontractors": 10198.0, "Education & coaching": 5287.54, "Rehab & materials": 3091.34, "Travel": 1300.29, "Inspections & due diligence": 599.36, "Office supplies": 657.21, "Bank & wire fees": 325.3, "Meals": 117.07, "Shipping": 31.6}}, "PENDING": [{"date": "07/01/2026", "m": "0708", "amt": 100.0, "kind": "expense", "desc": "OWT ( Southern Law Group)", "src": "Checking"}, {"date": "07/01/2026", "m": "0708", "amt": 13.85, "kind": "expense", "desc": "Walmart", "src": "Checking"}, {"date": "07/01/2026", "m": "0708", "amt": 31.32, "kind": "expense", "desc": "Chick-Fil-A", "src": "Checking"}, {"date": "06/29/2026", "m": "06", "amt": 169.0, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "06/26/2026", "m": "06", "amt": 300.0, "kind": "expense", "desc": "Zelle XIOMARA FLORES (877)968-7828", "src": "Checking"}, {"date": "06/10/2026", "m": "06", "amt": 77.62, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "06/08/2026", "m": "06", "amt": 500.0, "kind": "expense", "desc": "Zelle Sara Thomas (877)968-7828", "src": "Checking"}, {"date": "06/05/2026", "m": "06", "amt": 7806.0, "kind": "expense", "desc": "UkrainianFCU P2P XFR", "src": "Checking"}, {"date": "05/18/2026", "m": "05", "amt": 57.39, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "05/15/2026", "m": "05", "amt": 100.0, "kind": "expense", "desc": "Zelle JOSEPH BIBBO (877)968-7828", "src": "Checking"}, {"date": "05/11/2026", "m": "05", "amt": 38.84, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "05/04/2026", "m": "05", "amt": 720.65, "kind": "expense", "desc": "CITI CARD ONLINE PAYMENT", "src": "Checking"}, {"date": "04/30/2026", "m": "04", "amt": 13.86, "kind": "expense", "desc": "Walmart", "src": "Checking"}, {"date": "04/27/2026", "m": "04", "amt": 1000.0, "kind": "expense", "desc": "Zelle To AKIN REALTY LLC Accounts . +1-877-9", "src": "Checking"}, {"date": "04/17/2026", "m": "04", "amt": 38393.0, "kind": "deposit", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "04/06/2026", "m": "04", "amt": 3505.0, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "03/13/2026", "m": "03", "amt": 225.28, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "03/13/2026", "m": "03", "amt": 1916.44, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "03/09/2026", "m": "03", "amt": 92.0, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "03/02/2026", "m": "03", "amt": 380.72, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "02/20/2026", "m": "02", "amt": 3500.0, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "02/17/2026", "m": "02", "amt": 220.0, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "02/13/2026", "m": "02", "amt": 39.67, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "02/12/2026", "m": "02", "amt": 500.0, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "02/10/2026", "m": "02", "amt": 50.0, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "02/02/2026", "m": "02", "amt": 250.0, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "01/23/2026", "m": "01", "amt": 97.0, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "01/23/2026", "m": "01", "amt": 1300.0, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "01/20/2026", "m": "01", "amt": 10824.06, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "01/09/2026", "m": "01", "amt": 100.0, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "01/07/2026", "m": "01", "amt": 25.0, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "01/05/2026", "m": "01", "amt": 75.0, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}, {"date": "01/05/2026", "m": "01", "amt": 50.0, "kind": "expense", "desc": "(no description \u2014 to identify)", "src": "Checking"}], "LIQ": {"fijosMes": 5999.33, "drawProm": 10520.44, "cash": 21273.14}, "ORDER": ["01", "02", "03", "04", "05", "06", "0708", "09"], "EXPTX": [{"m": "0708", "date": "07/03/2026", "amt": 1000.0, "cat": "Deal subcontractors", "desc": "Edgar Perez"}, {"m": "0708", "date": "07/02/2026", "amt": 14.01, "cat": "Rehab & materials", "desc": "Home Depot"}, {"m": "0708", "date": "07/01/2026", "amt": 20.0, "cat": "Bank & wire fees", "desc": "UFCU (wire fee)"}, {"m": "06", "date": "06/18/2026", "amt": 5.74, "cat": "Meals", "desc": "Starbucks"}, {"m": "04", "date": "04/30/2026", "amt": 31.6, "cat": "Shipping", "desc": "UPS"}, {"m": "04", "date": "04/13/2026", "amt": 25.3, "cat": "Bank & wire fees", "desc": "HarlandClarke-Li CHK ORDER"}, {"m": "04", "date": "04/02/2026", "amt": 10.0, "cat": "Bank & wire fees", "desc": "UFCU (wire fee)"}, {"m": "04", "date": "04/02/2026", "amt": 10.0, "cat": "Bank & wire fees", "desc": "UFCU (wire fee)"}, {"m": "03", "date": "03/25/2026", "amt": 70.17, "cat": "Rehab & materials", "desc": "(no description)"}, {"m": "03", "date": "03/24/2026", "amt": 1010.0, "cat": "Deal subcontractors", "desc": "(no description)"}, {"m": "03", "date": "03/19/2026", "amt": 75.73, "cat": "Rehab & materials", "desc": "(no description)"}, {"m": "03", "date": "03/11/2026", "amt": 23.51, "cat": "Rehab & materials", "desc": "Home Depot"}, {"m": "03", "date": "03/05/2026", "amt": 400.0, "cat": "Deal subcontractors", "desc": "(no description)"}, {"m": "02", "date": "02/26/2026", "amt": 10.0, "cat": "Bank & wire fees", "desc": "UFCU (wire fee)"}, {"m": "02", "date": "02/20/2026", "amt": 53.33, "cat": "Rehab & materials", "desc": "(no description)"}, {"m": "02", "date": "02/20/2026", "amt": 20.0, "cat": "Bank & wire fees", "desc": "UFCU (wire fee)"}, {"m": "02", "date": "02/17/2026", "amt": 64.56, "cat": "Travel", "desc": "(no description)"}, {"m": "02", "date": "02/12/2026", "amt": 10.0, "cat": "Bank & wire fees", "desc": "UFCU (wire fee)"}, {"m": "02", "date": "02/11/2026", "amt": 424.0, "cat": "Deal subcontractors", "desc": "(no description)"}, {"m": "02", "date": "02/10/2026", "amt": 10.0, "cat": "Bank & wire fees", "desc": "UFCU (wire fee)"}, {"m": "02", "date": "02/10/2026", "amt": 3500.0, "cat": "Deal subcontractors", "desc": "(no description)"}, {"m": "02", "date": "02/02/2026", "amt": 14.0, "cat": "Deal subcontractors", "desc": "(no description)"}, {"m": "02", "date": "02/02/2026", "amt": 364.0, "cat": "Deal subcontractors", "desc": "(no description)"}, {"m": "02", "date": "02/02/2026", "amt": 3486.0, "cat": "Deal subcontractors", "desc": "(no description)"}, {"m": "01", "date": "01/20/2026", "amt": 20.0, "cat": "Bank & wire fees", "desc": "UFCU (wire fee)"}, {"m": "01", "date": "01/16/2026", "amt": 10.0, "cat": "Bank & wire fees", "desc": "UFCU (wire fee)"}, {"m": "01", "date": "01/12/2026", "amt": 10.0, "cat": "Bank & wire fees", "desc": "UFCU (wire fee)"}, {"m": "01", "date": "01/09/2026", "amt": 20.0, "cat": "Bank & wire fees", "desc": "UFCU (wire fee)"}, {"m": "05", "date": "05/18/2026", "amt": 223.0, "cat": "Virtual assistants", "desc": "PURCHASE (IAT: JOSE VELASCO JR.) (IAT: GENERAL TRIAS"}, {"m": "04", "date": "04/28/2026", "amt": 303.0, "cat": "Virtual assistants", "desc": "Wise (VA intl)"}, {"m": "04", "date": "04/28/2026", "amt": 252.0, "cat": "Virtual assistants", "desc": "Wise (VA intl)"}, {"m": "04", "date": "04/03/2026", "amt": 605.0, "cat": "Virtual assistants", "desc": "Wise (VA intl)"}, {"m": "04", "date": "04/03/2026", "amt": 252.0, "cat": "Virtual assistants", "desc": "Wise (VA intl)"}, {"m": "03", "date": "03/02/2026", "amt": 252.0, "cat": "Virtual assistants", "desc": "Wise (VA intl)"}, {"m": "03", "date": "03/02/2026", "amt": 504.0, "cat": "Virtual assistants", "desc": "Wise (VA intl)"}, {"m": "02", "date": "02/13/2026", "amt": 152.0, "cat": "Virtual assistants", "desc": "Wise (VA intl)"}, {"m": "02", "date": "02/13/2026", "amt": 152.0, "cat": "Virtual assistants", "desc": "Wise (VA intl)"}, {"m": "01", "date": "01/26/2026", "amt": 252.0, "cat": "Virtual assistants", "desc": "Wise (VA intl)"}, {"m": "01", "date": "01/26/2026", "amt": 252.0, "cat": "Virtual assistants", "desc": "Wise (VA intl)"}, {"m": "01", "date": "01/14/2026", "amt": 504.0, "cat": "Virtual assistants", "desc": "Wise (VA intl)"}, {"m": "01", "date": "01/14/2026", "amt": 252.0, "cat": "Virtual assistants", "desc": "Wise (VA intl)"}, {"m": "06", "date": "06/08/2026", "amt": 342.83, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "06", "date": "06/08/2026", "amt": 10.69, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "06", "date": "06/06/2026", "amt": 1495.0, "cat": "Advertising & marketing", "desc": "ZeitBlast"}, {"m": "06", "date": "06/05/2026", "amt": 10.19, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "06", "date": "06/04/2026", "amt": 8.35, "cat": "Office supplies", "desc": "Amazon"}, {"m": "06", "date": "06/04/2026", "amt": 10.27, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "06", "date": "06/03/2026", "amt": 99.0, "cat": "Software & subscriptions", "desc": "PropStream"}, {"m": "06", "date": "06/03/2026", "amt": 10.04, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "06", "date": "06/02/2026", "amt": 10.0, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "06", "date": "06/01/2026", "amt": 215.78, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "06", "date": "06/01/2026", "amt": 249.0, "cat": "Software & subscriptions", "desc": "InvestorBase"}, {"m": "06", "date": "06/01/2026", "amt": 12.2, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "06", "date": "06/01/2026", "amt": 67.14, "cat": "Software & subscriptions", "desc": "CloudTalk.io"}, {"m": "05", "date": "05/30/2026", "amt": 10.01, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "05", "date": "05/28/2026", "amt": 10.12, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "05", "date": "05/28/2026", "amt": 600.0, "cat": "Education & coaching", "desc": "Whop/Prexium"}, {"m": "05", "date": "05/28/2026", "amt": 197.48, "cat": "Office supplies", "desc": "Amazon"}, {"m": "05", "date": "05/27/2026", "amt": 11.88, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "05", "date": "05/26/2026", "amt": 20.0, "cat": "Software & subscriptions", "desc": "OpenAI"}, {"m": "05", "date": "05/25/2026", "amt": 168.0, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "05", "date": "05/25/2026", "amt": 11.05, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "05", "date": "05/25/2026", "amt": 54.44, "cat": "Travel", "desc": "Shell"}, {"m": "05", "date": "05/24/2026", "amt": 197.0, "cat": "Education & coaching", "desc": "Skool"}, {"m": "05", "date": "05/22/2026", "amt": 10.86, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "05", "date": "05/21/2026", "amt": 21.13, "cat": "Office supplies", "desc": "Amazon"}, {"m": "05", "date": "05/20/2026", "amt": 10.12, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "05", "date": "05/20/2026", "amt": 24.8, "cat": "Software & subscriptions", "desc": "CloudTalk.io"}, {"m": "05", "date": "05/20/2026", "amt": 24.8, "cat": "Software & subscriptions", "desc": "CloudTalk.io"}, {"m": "05", "date": "05/19/2026", "amt": 10.01, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "05", "date": "05/18/2026", "amt": 320.16, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "05", "date": "05/15/2026", "amt": 43.67, "cat": "Inspections & due diligence", "desc": "Charlotte BBB"}, {"m": "05", "date": "05/14/2026", "amt": 10.02, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "05", "date": "05/14/2026", "amt": 56.0, "cat": "Travel", "desc": "Aviation Parking"}, {"m": "05", "date": "05/13/2026", "amt": 10.05, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "05", "date": "05/12/2026", "amt": 10.39, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "05", "date": "05/12/2026", "amt": 147.0, "cat": "Education & coaching", "desc": "Skool"}, {"m": "05", "date": "05/11/2026", "amt": 306.95, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "05", "date": "05/09/2026", "amt": 1495.0, "cat": "Advertising & marketing", "desc": "ZeitBlast"}, {"m": "05", "date": "05/08/2026", "amt": 10.14, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "05", "date": "05/06/2026", "amt": 10.1, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "05", "date": "05/05/2026", "amt": 131.44, "cat": "Travel", "desc": "Airbnb"}, {"m": "05", "date": "05/04/2026", "amt": 296.45, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "05", "date": "05/03/2026", "amt": 99.0, "cat": "Software & subscriptions", "desc": "PropStream"}, {"m": "05", "date": "05/02/2026", "amt": 46.6, "cat": "Meals", "desc": "Cava"}, {"m": "05", "date": "05/01/2026", "amt": 67.14, "cat": "Software & subscriptions", "desc": "CloudTalk.io"}, {"m": "05", "date": "05/01/2026", "amt": 249.0, "cat": "Software & subscriptions", "desc": "InvestorBase"}, {"m": "05", "date": "05/01/2026", "amt": 10.03, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "04", "date": "04/29/2026", "amt": 10.17, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "04", "date": "04/29/2026", "amt": 10.06, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "04", "date": "04/27/2026", "amt": 300.39, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "04", "date": "04/26/2026", "amt": 20.0, "cat": "Software & subscriptions", "desc": "OpenAI"}, {"m": "04", "date": "04/26/2026", "amt": 40.5, "cat": "Rehab & materials", "desc": "CityLocs"}, {"m": "04", "date": "04/25/2026", "amt": 10.01, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "04", "date": "04/23/2026", "amt": 10.13, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "04", "date": "04/22/2026", "amt": 10.05, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "04", "date": "04/22/2026", "amt": 21.54, "cat": "Meals", "desc": "Copain"}, {"m": "04", "date": "04/22/2026", "amt": 20.01, "cat": "Meals", "desc": "Copain"}, {"m": "04", "date": "04/20/2026", "amt": 312.9, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "04", "date": "04/20/2026", "amt": 10.7, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "04", "date": "04/16/2026", "amt": 250.0, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "04", "date": "04/16/2026", "amt": 10.77, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "04", "date": "04/15/2026", "amt": 10.02, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "04", "date": "04/15/2026", "amt": 43.67, "cat": "Inspections & due diligence", "desc": "Charlotte BBB"}, {"m": "04", "date": "04/14/2026", "amt": 120.0, "cat": "Software & subscriptions", "desc": "SignWell"}, {"m": "04", "date": "04/13/2026", "amt": 10.01, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "04", "date": "04/13/2026", "amt": 285.86, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "04", "date": "04/12/2026", "amt": 147.0, "cat": "Education & coaching", "desc": "Skool"}, {"m": "04", "date": "04/11/2026", "amt": 1495.0, "cat": "Advertising & marketing", "desc": "ZeitBlast"}, {"m": "04", "date": "04/10/2026", "amt": 600.0, "cat": "Education & coaching", "desc": "Whop/Prexium"}, {"m": "04", "date": "04/09/2026", "amt": 10.0, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "04", "date": "04/08/2026", "amt": 10.04, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "04", "date": "04/07/2026", "amt": 10.2, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "04", "date": "04/06/2026", "amt": 211.13, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "04", "date": "04/03/2026", "amt": 10.01, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "04", "date": "04/03/2026", "amt": 99.0, "cat": "Software & subscriptions", "desc": "PropStream"}, {"m": "04", "date": "04/01/2026", "amt": 10.56, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "04", "date": "04/01/2026", "amt": 249.0, "cat": "Software & subscriptions", "desc": "InvestorBase"}, {"m": "04", "date": "04/01/2026", "amt": 67.14, "cat": "Software & subscriptions", "desc": "CloudTalk.io"}, {"m": "04", "date": "04/01/2026", "amt": 587.17, "cat": "Rehab & materials", "desc": "Lowes"}, {"m": "03", "date": "03/31/2026", "amt": 267.54, "cat": "Education & coaching", "desc": "The Wholesaling Co"}, {"m": "03", "date": "03/31/2026", "amt": 209.14, "cat": "Rehab & materials", "desc": "Home Depot"}, {"m": "03", "date": "03/31/2026", "amt": 10.04, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "03", "date": "03/30/2026", "amt": 10.01, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "03", "date": "03/30/2026", "amt": 138.67, "cat": "Rehab & materials", "desc": "Lowes"}, {"m": "03", "date": "03/30/2026", "amt": 263.76, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "03", "date": "03/26/2026", "amt": 20.0, "cat": "Software & subscriptions", "desc": "OpenAI"}, {"m": "03", "date": "03/26/2026", "amt": 10.19, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "03", "date": "03/25/2026", "amt": 10.01, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "03", "date": "03/24/2026", "amt": 11.12, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "03", "date": "03/23/2026", "amt": 239.22, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "03", "date": "03/20/2026", "amt": 10.07, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "03", "date": "03/18/2026", "amt": 10.03, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "03", "date": "03/16/2026", "amt": 10.02, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "03", "date": "03/16/2026", "amt": 235.88, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "03", "date": "03/16/2026", "amt": 250.0, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "03", "date": "03/14/2026", "amt": 1495.0, "cat": "Advertising & marketing", "desc": "ZeitBlast"}, {"m": "03", "date": "03/12/2026", "amt": 10.01, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "03", "date": "03/12/2026", "amt": 147.0, "cat": "Education & coaching", "desc": "Skool"}, {"m": "03", "date": "03/11/2026", "amt": 10.07, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "03", "date": "03/10/2026", "amt": 10.01, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "03", "date": "03/10/2026", "amt": 250.0, "cat": "Inspections & due diligence", "desc": "IBTS"}, {"m": "03", "date": "03/09/2026", "amt": 10.11, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "03", "date": "03/09/2026", "amt": 600.0, "cat": "Education & coaching", "desc": "Whop/Prexium"}, {"m": "03", "date": "03/09/2026", "amt": 269.51, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "03", "date": "03/09/2026", "amt": 43.67, "cat": "Inspections & due diligence", "desc": "Charlotte BBB"}, {"m": "03", "date": "03/06/2026", "amt": 27.8, "cat": "Rehab & materials", "desc": "Lowes"}, {"m": "03", "date": "03/06/2026", "amt": 83.83, "cat": "Rehab & materials", "desc": "Lowes"}, {"m": "03", "date": "03/05/2026", "amt": 11.18, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "03", "date": "03/04/2026", "amt": 10.01, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "03", "date": "03/03/2026", "amt": 99.0, "cat": "Software & subscriptions", "desc": "PropStream"}, {"m": "03", "date": "03/02/2026", "amt": 282.77, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "03", "date": "03/02/2026", "amt": 10.0, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "03", "date": "03/01/2026", "amt": 67.18, "cat": "Software & subscriptions", "desc": "CloudTalk.io"}, {"m": "03", "date": "03/01/2026", "amt": 1767.48, "cat": "Rehab & materials", "desc": "Appliances 4 Less"}, {"m": "03", "date": "03/01/2026", "amt": 249.0, "cat": "Software & subscriptions", "desc": "InvestorBase"}, {"m": "03", "date": "03/01/2026", "amt": 446.69, "cat": "Travel", "desc": "Airbnb"}, {"m": "02", "date": "02/28/2026", "amt": 437.13, "cat": "Travel", "desc": "Airbnb"}, {"m": "02", "date": "02/26/2026", "amt": 10.31, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "02", "date": "02/26/2026", "amt": 20.0, "cat": "Software & subscriptions", "desc": "OpenAI"}, {"m": "02", "date": "02/25/2026", "amt": 600.0, "cat": "Education & coaching", "desc": "Whop/Prexium"}, {"m": "02", "date": "02/25/2026", "amt": 11.49, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "02", "date": "02/25/2026", "amt": 10.0, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "02", "date": "02/24/2026", "amt": 10.69, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "02", "date": "02/23/2026", "amt": 5.31, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "02", "date": "02/23/2026", "amt": 292.16, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "02", "date": "02/21/2026", "amt": 10.02, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "02", "date": "02/18/2026", "amt": 10.02, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "02", "date": "02/18/2026", "amt": 10.06, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "02", "date": "02/16/2026", "amt": 250.0, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "02", "date": "02/16/2026", "amt": 218.45, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "02", "date": "02/14/2026", "amt": 10.01, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "02", "date": "02/13/2026", "amt": 1495.0, "cat": "Advertising & marketing", "desc": "ZeitBlast"}, {"m": "02", "date": "02/12/2026", "amt": 147.0, "cat": "Education & coaching", "desc": "Skool"}, {"m": "02", "date": "02/12/2026", "amt": 12.23, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "02", "date": "02/11/2026", "amt": 10.09, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "02", "date": "02/09/2026", "amt": 288.36, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "02", "date": "02/05/2026", "amt": 11.13, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "02", "date": "02/05/2026", "amt": 7.62, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "02", "date": "02/04/2026", "amt": 10.06, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "02", "date": "02/03/2026", "amt": 99.0, "cat": "Software & subscriptions", "desc": "PropStream"}, {"m": "02", "date": "02/02/2026", "amt": 10.2, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "02", "date": "02/02/2026", "amt": 304.58, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "02", "date": "02/01/2026", "amt": 67.18, "cat": "Software & subscriptions", "desc": "CloudTalk.io"}, {"m": "02", "date": "02/01/2026", "amt": 249.0, "cat": "Software & subscriptions", "desc": "InvestorBase"}, {"m": "01", "date": "01/30/2026", "amt": 10.01, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "01", "date": "01/26/2026", "amt": 179.0, "cat": "Software & subscriptions", "desc": "InvestorBase/Bootz"}, {"m": "01", "date": "01/26/2026", "amt": 20.0, "cat": "Software & subscriptions", "desc": "OpenAI"}, {"m": "01", "date": "01/26/2026", "amt": 226.64, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "01", "date": "01/19/2026", "amt": 261.95, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "01", "date": "01/16/2026", "amt": 1495.0, "cat": "Advertising & marketing", "desc": "ZeitBlast"}, {"m": "01", "date": "01/16/2026", "amt": 250.0, "cat": "Software & subscriptions", "desc": "Closer Control CRM"}, {"m": "01", "date": "01/14/2026", "amt": 159.9, "cat": "Software & subscriptions", "desc": "Zoom"}, {"m": "01", "date": "01/12/2026", "amt": 282.08, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "01", "date": "01/07/2026", "amt": 43.19, "cat": "Office supplies", "desc": "Amazon"}, {"m": "01", "date": "01/05/2026", "amt": 292.4, "cat": "Virtual assistants", "desc": "Upwork"}, {"m": "01", "date": "01/03/2026", "amt": 99.0, "cat": "Software & subscriptions", "desc": "PropStream"}, {"m": "01", "date": "01/02/2026", "amt": 23.18, "cat": "Meals", "desc": "DoorDash"}, {"m": "01", "date": "01/01/2026", "amt": 249.0, "cat": "Software & subscriptions", "desc": "InvestorBase"}, {"m": "01", "date": "01/01/2026", "amt": 67.18, "cat": "Software & subscriptions", "desc": "CloudTalk.io"}], "CREDIT": {"chase": [{"l": "Jun-24", "bal": 4203.15, "line": 18800}, {"l": "Jul-24", "bal": 12023.62, "line": 21800}, {"l": "Aug-24", "bal": 11591.75, "line": 21800}, {"l": "Sep-24", "bal": 13745.77, "line": 21800}, {"l": "Oct-24", "bal": 17355.98, "line": 21800}, {"l": "Nov-24", "bal": 3340.17, "line": 21800}, {"l": "Dec-24", "bal": 5916.95, "line": 21800}, {"l": "Jan-25", "bal": 6988.32, "line": 21800}, {"l": "Feb-25", "bal": 11236.63, "line": 21800}, {"l": "Mar-25", "bal": 2099.74, "line": 21800}, {"l": "Apr-25", "bal": 12797.39, "line": 21800}, {"l": "May-25", "bal": 15669.53, "line": 24800}, {"l": "Jun-25", "bal": 10358.22, "line": 24800}, {"l": "Jul-25", "bal": 3908.55, "line": 24800}, {"l": "Aug-25", "bal": 1131.32, "line": 24800}, {"l": "Sep-25", "bal": 883.12, "line": 24800}, {"l": "Oct-25", "bal": 693.84, "line": 24800}, {"l": "Nov-25", "bal": 117.4, "line": 24800}, {"l": "Dec-25", "bal": 922.08, "line": 24800}, {"l": "Jan-26", "bal": 25.0, "line": 24800}, {"l": "Feb-26", "bal": 11184.69, "line": 24800}, {"l": "Mar-26", "bal": 32.99, "line": 24800}, {"l": "Apr-26", "bal": 1596.89, "line": 24800}, {"l": "May-26", "bal": 4014.49, "line": 24800}, {"l": "Jun-26", "bal": 1338.55, "line": 24800}, {"l": "Jul-26", "bal": 956.85, "line": 24800}, {"l": "Aug-26", "bal": 652.13, "line": 24800}, {"l": "Sep-26", "bal": 815.17, "line": 24800}], "qtr": [{"l": "Q2-24", "b": 3538.99, "a": 818.44, "h": 1655.21}, {"l": "Q3-24", "b": 12241.16, "a": 1141.21, "h": 3248.39}, {"l": "Q4-24", "b": 7451.97, "a": 1150.05, "h": 3590.53}, {"l": "Q1-25", "b": 6067.65, "a": 847.8, "h": 6520.76}, {"l": "Q2-25", "b": 15995.53, "a": 2109.92, "h": 7533.63}, {"l": "Q3-25", "b": 7265.77, "a": 1013.75, "h": 8333.8}, {"l": "Q4-25", "b": 1668.6, "a": 585, "h": 7428.62}, {"l": "Q1-26", "b": 180.6, "a": 1816, "h": 16081.8}, {"l": "Q2-26", "b": 118.6, "a": 1355.4, "h": 11417.19}, {"l": "Q3-26", "b": 312, "a": 888.45, "h": 2619.16}]}};
+const MN3={"01":"Jan","02":"Feb","03":"Mar","04":"Apr","05":"May","06":"Jun","0708":"Jul–Aug","09":"Sep"};
+const AGG=new Set(["0708","09"]);
+const POS="#2F6B4F",POSP="#A7C6B4",NEG="#B0483B",NEGP="#E1C08C",INK="#1F3864",FADE="#CFD6E1";
+let state="all";
+const $=s=>document.querySelector(s);
+function fmt(v,dec){const n=Math.abs(v).toLocaleString("en-US",{minimumFractionDigits:dec||0,maximumFractionDigits:dec||0});return (v<0?"−$":"$")+n;}
+function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+if(window.Chart){Chart.defaults.font.family="'IBM Plex Mono',monospace";Chart.defaults.font.size=11;Chart.defaults.color="#5C6675";}
+
+function buildFilter(){
+ const f=$("#filter");
+ const mk=(id,lab)=>{const b=document.createElement("button");b.className="pill"+(id===state?" on":"");b.textContent=lab;b.onclick=()=>setState(id);return b;};
+ f.appendChild(mk("all","Full year"));
+ D.ORDER.forEach(m=>f.appendChild(mk(m,MN3[m]||m)));
+}
+function setState(s){state=s;document.querySelectorAll("#filter .pill").forEach((p,i)=>{const id=i===0?"all":D.ORDER[i-1];p.classList.toggle("on",id===state);});render();}
+
+let trendCh,donutCh;
+function trendData(){
+ const inI=[],inP=[],exI=[],exP=[],net=[];
+ D.ORDER.forEach(m=>{const M=D.MONTHS[m];
+  const ii=Object.values(M.inc).reduce((a,b)=>a+b,0),ip=M.incPend||0;
+  const ei=Object.values(M.exp).reduce((a,b)=>a+b,0),ep=M.expPend||0;
+  inI.push(ii);inP.push(ip);exI.push(-ei);exP.push(-ep);net.push(ii+ip-ei-ep);});
+ return {inI,inP,exI,exP,net};
+}
+function colorsFor(base,dim){return D.ORDER.map(m=>(state==="all"||state===m)?base:dim);}
+function renderTrend(){
+ const t=trendData(),ctx=$("#trend");if(!ctx||!window.Chart)return;
+ const labels=D.ORDER.map(m=>MN3[m]||m);
+ const ds=[
+  {label:"Income (identified)",data:t.inI,backgroundColor:colorsFor(POS,"#BFD4C7"),stack:"in",borderRadius:3,order:3},
+  {label:"Income (pending)",data:t.inP,backgroundColor:colorsFor(POSP,"#D9E6DE"),stack:"in",borderRadius:3,order:3},
+  {label:"Expenses (identified)",data:t.exI,backgroundColor:colorsFor(NEG,"#D9BDB7"),stack:"ex",borderRadius:3,order:3},
+  {label:"Expenses (pending)",data:t.exP,backgroundColor:colorsFor(NEGP,"#EAD8B4"),stack:"ex",borderRadius:3,order:3},
+  {type:"line",label:"Net",data:t.net,borderColor:INK,backgroundColor:INK,borderWidth:2,pointRadius:D.ORDER.map(m=>(state===m)?5:3),pointBackgroundColor:D.ORDER.map(m=>(state==="all"||state===m)?INK:FADE),tension:.3,order:0}
+ ];
+ if(trendCh)trendCh.destroy();
+ trendCh=new Chart(ctx,{type:"bar",data:{labels,datasets:ds},options:{maintainAspectRatio:false,responsive:true,
+  interaction:{mode:"index",intersect:false},
+  scales:{x:{stacked:true,grid:{display:false}},y:{stacked:true,grid:{color:"#E4E8EF"},ticks:{callback:v=>"$"+(v/1000)+"k"}}},
+  plugins:{legend:{position:"bottom",labels:{boxWidth:11,boxHeight:11,padding:12,usePointStyle:true}},
+   tooltip:{callbacks:{label:c=>c.dataset.label+": "+fmt(Math.abs(c.parsed.y),0)}}}}});
+}
+
+function card(m){
+ const M=D.MONTHS[m];
+ const incR=Object.entries(M.inc).filter(([k,v])=>Math.abs(v)>.005);
+ const expR=Object.entries(M.exp).filter(([k,v])=>Math.abs(v)>.005).sort((a,b)=>b[1]-a[1]);
+ const incId=incR.reduce((a,[,v])=>a+v,0),expId=expR.reduce((a,[,v])=>a+v,0);
+ const net=incId+(M.incPend||0)-expId-(M.expPend||0);
+ let inc=incR.map(([k,v])=>`<div class="li"><span>${esc(k)}</span><span class="n">${fmt(v,0)}</span></div>`).join("");
+ if(M.incPend>.005)inc+=`<div class="li pend"><span>Pending deposits</span><span class="n">${fmt(M.incPend,0)}</span></div>`;
+ if(!inc)inc=`<div class="li muted"><span>No income</span><span></span></div>`;
+ let exp=expR.map(([k,v])=>`<div class="li"><span>${esc(k)}</span><span class="n">${fmt(v,0)}</span></div>`).join("");
+ if(M.expPend>.005)exp+=`<div class="li pend"><span>Pending expenses</span><span class="n">${fmt(M.expPend,0)}</span></div>`;
+ if(!exp)exp=`<div class="li muted"><span>No expenses</span><span></span></div>`;
+ const cls=net>=0?"pos":"neg";
+ let chips="";
+ const np=D.PENDING.filter(p=>p.m===m).length;
+ if(np)chips+=`<span class="chip crit">${np} pending to identify</span>`;
+ if(M.draw>.005)chips+=`<span class="chip draw">Owner draws ${fmt(M.draw,0)}</span>`;
+ if(net<0)chips+=`<span class="chip note">Net loss this period</span>`;
+ if(AGG.has(m))chips+=`<span class="chip agg">Category-level (QBO report)</span>`;
+ return `<div class="mo ${cls}">
+  <div class="mo-h"><h3>${esc(M.name)}</h3><div class="mo-net"><span class="lbl">Net</span><span class="net-v ${net>=0?'p':'n'}">${fmt(net,0)}</span></div></div>
+  <div class="mo-cols">
+   <div><div class="col-h"><span>Income</span><span class="ct">${fmt(incId+(M.incPend||0),0)}</span></div>${inc}</div>
+   <div><div class="col-h"><span>Expenses</span><span class="ct">${fmt(expId+(M.expPend||0),0)}</span></div>${exp}</div>
+  </div>${chips?`<div class="chips">${chips}</div>`:""}</div>`;
+}
+function renderLedger(){
+ const L=$("#ledger");
+ if(state==="all"){L.className="";L.innerHTML=D.ORDER.map(card).join("");$("#ledgerCnt").textContent=D.ORDER.length+" periods";}
+ else{L.className="single";L.innerHTML=card(state);$("#ledgerCnt").textContent=MN3[state]||state;}
+}
+
+function renderPending(){
+ const sec=$("#pendSection"),mount=$("#pendMount");
+ const rows=(state==="all"?D.PENDING:D.PENDING.filter(p=>p.m===state));
+ const tot=rows.reduce((a,p)=>a+p.amt,0);
+ $("#pendCnt").textContent=rows.length?rows.length+" items · "+fmt(tot,0):"";
+ const tbl=list=>`<table class="pend-tbl"><thead><tr><th>Date</th><th>Type</th><th>Description</th><th class="r">Amount</th></tr></thead><tbody>${
+  list.slice().sort((a,b)=>new Date(a.date)-new Date(b.date)).map(p=>`<tr><td class="dt">${p.date}</td><td><span class="kindtag ${p.kind==='deposit'?'dep':'exp'}">${p.kind}</span></td><td>${esc(p.desc)}</td><td class="am ${p.kind==='deposit'?'dep':'exp'}">${fmt(p.amt,0)}</td></tr>`).join("")}</tbody></table>`;
+ if(!rows.length){sec.classList.remove("hide");mount.innerHTML=`<div class="panel"><p class="pend-note">No open items for this period — everything here is categorized.</p></div>`;return;}
+ sec.classList.remove("hide");
+ const note=`<p class="pend-note">These transactions are in the bank data but not yet assigned to a category. They are the main reason the totals above are still preliminary. Nothing here is missing money — only unclassified.</p>`;
+ if(state==="all")mount.innerHTML=`<div class="panel">${note}<details class="pend-d"><summary><span>All ${rows.length} pending items · ${fmt(tot,0)}</span><span class="chev"></span></summary><div class="pd-body">${tbl(rows)}</div></details></div>`;
+ else mount.innerHTML=`<div class="panel">${note}${tbl(rows)}</div>`;
+}
+
+function renderExp(){
+ const scope=(state==="all")?D.TOTALS.expCats:D.MONTHS[state].exp;
+ const pend=(state==="all")?D.TOTALS.expPend:(D.MONTHS[state].expPend||0);
+ const ents=Object.entries(scope).filter(([k,v])=>Math.abs(v)>.005).sort((a,b)=>b[1]-a[1]);
+ const tot=ents.reduce((a,[,v])=>a+v,0);
+ $("#expScope").textContent=(state==="all"?"Full year":(MN3[state]||state))+" · "+fmt(tot,0)+" identified";
+ const L=$("#expList");
+ L.innerHTML=ents.map(([cat,v])=>{
+   const txs=D.EXPTX.filter(t=>t.cat===cat&&(state==="all"||t.m===state)).sort((a,b)=>b.amt-a.amt);
+   const pct=tot?(v/tot*100):0;
+   if(!txs.length){
+     return `<div class="catrow"><span class="sm-l">${esc(cat)} <span class="cnt-b">${pct.toFixed(0)}%</span></span><span class="sm-v">${fmt(v,0)}</span></div>`;
+   }
+   const rows=txs.map(t=>`<tr><td class="d">${t.date}</td><td>${esc(t.desc)}</td><td class="a">${fmt(t.amt,0)}</td></tr>`).join("");
+   return `<details class="acc"><summary><span class="sm-l"><span class="chev"></span>${esc(cat)} <span class="cnt-b">${txs.length}</span></span><span class="sm-v">${fmt(v,0)}</span></summary><div class="body"><table class="sub-tx">${rows}</table></div></details>`;
+ }).join("");
+ if(pend>.005)L.innerHTML+=`<div class="plainrow"><span>Pending — not yet categorized</span><span class="sm-v">${fmt(pend,0)}</span></div>`;
+ // donut
+ const ctx=$("#donut");if(!ctx||!window.Chart)return;
+ const top=ents.slice(0,7),rest=ents.slice(7).reduce((a,[,v])=>a+v,0);
+ const labels=top.map(([k])=>k).concat(rest>.005?["Other"]:[]).concat(pend>.005?["Pending"]:[]);
+ const data=top.map(([,v])=>v).concat(rest>.005?[rest]:[]).concat(pend>.005?[pend]:[]);
+ const pal=["#2E5496","#3A6EA5","#4F8AB0","#6FA8B8","#2F6B4F","#5C8A6E","#8FB3A0","#C2CFDD"];
+ const bg=labels.map((l,i)=>l==="Pending"?NEGP:pal[i%pal.length]);
+ if(donutCh)donutCh.destroy();
+ donutCh=new Chart(ctx,{type:"doughnut",data:{labels,datasets:[{data,backgroundColor:bg,borderColor:"#fff",borderWidth:2}]},
+  options:{maintainAspectRatio:false,responsive:true,cutout:"58%",
+   plugins:{legend:{position:"right",labels:{boxWidth:10,boxHeight:10,padding:9,font:{size:10.5}}},
+    tooltip:{callbacks:{label:c=>c.label+": "+fmt(c.parsed,0)}}}}});
+}
+
+function runway(){
+ const cash=D.LIQ.cash,fijos=D.LIQ.fijosMes;
+ let sal=parseFloat($("#rwSalary").value);if(isNaN(sal)||sal<0)sal=0;
+ const burn=fijos+sal,mo=burn>0?cash/burn:0;
+ $("#rwBurn").textContent="−"+fmt(burn,0);
+ $("#rwMonths").textContent=mo.toFixed(1);
+ $("#rwUnit").textContent=mo>=1?"months of cash":"month of cash";
+ $("#rwNote").innerHTML=`At ${fmt(cash,0)} cash and ${fmt(burn,0)}/mo burn (${fmt(fijos,0)} fixed + ${fmt(sal,0)} salary), current cash covers about <b>${mo.toFixed(1)} months</b>. This ignores new deal income — one closing resets the clock.`;
+}
+function scenarios(){
+ const cash=D.LIQ.cash,fijos=D.LIQ.fijosMes,prom=D.LIQ.drawProm;
+ const sc=[["Owner salary $4,000","target draw",fijos+4000,true],
+  ["Recent average draws",fmt(prom,0)+"/mo",fijos+prom,false],
+  ["Fixed costs only","no owner pay",fijos,false]];
+ $("#scen").innerHTML=sc.map(([l,u,burn,hi])=>{const mo=burn>0?cash/burn:0;return `<div class="scen ${hi?'hi':''}"><div class="sc-l">${l}</div><div class="sc-m">${mo.toFixed(1)}</div><div class="sc-u">months · ${u}</div></div>`;}).join("");
+}
+
+function render(){renderTrend();renderLedger();renderPending();renderExp();}
+buildFilter();render();runway();scenarios();
+$("#rwSalary").addEventListener("input",runway);
+
+function renderCredit(){
+ if(!window.Chart||!D.CREDIT)return;
+ const C=D.CREDIT.chase,labels=C.map(p=>p.l),util=C.map(p=>Math.round(p.bal/p.line*1000)/10);
+ const dot=v=>v>=30?NEG:(v>=10?"#A9761C":POS);
+ const a=$("#crChart");
+ if(a)new Chart(a,{type:"line",data:{labels,datasets:[
+  {label:"Balance ÷ credit line",data:util,borderColor:INK,backgroundColor:INK,borderWidth:2,tension:.25,pointRadius:4,pointBackgroundColor:util.map(dot),pointBorderColor:"#fff",pointBorderWidth:1.5,order:0},
+  {label:"30% guide",data:util.map(()=>30),borderColor:NEG,borderDash:[5,4],borderWidth:1,pointRadius:0,order:1},
+  {label:"10% guide",data:util.map(()=>10),borderColor:POS,borderDash:[5,4],borderWidth:1,pointRadius:0,order:1}
+ ]},options:{maintainAspectRatio:false,responsive:true,interaction:{mode:"index",intersect:false},
+  scales:{x:{grid:{display:false},ticks:{maxRotation:60,autoSkip:true}},y:{min:0,max:100,grid:{color:"#E4E8EF"},ticks:{callback:v=>v+"%"}}},
+  plugins:{legend:{position:"bottom",labels:{boxWidth:11,boxHeight:11,padding:12,usePointStyle:true}},
+   tooltip:{callbacks:{label:c=>c.datasetIndex===0?c.parsed.y+"% · "+fmt(C[c.dataIndex].bal,0)+" of "+fmt(C[c.dataIndex].line,0):c.dataset.label}}}}});
+ const Q=D.CREDIT.qtr,u=$("#crUse");
+ if(u)new Chart(u,{type:"bar",data:{labels:Q.map(x=>x.l),datasets:[
+  {label:"Business-type",data:Q.map(x=>x.b),backgroundColor:POS,stack:"s",borderRadius:2},
+  {label:"Ambiguous",data:Q.map(x=>x.a),backgroundColor:"#E1C08C",stack:"s",borderRadius:2},
+  {label:"Household / other",data:Q.map(x=>x.h),backgroundColor:"#9AA6BA",stack:"s",borderRadius:2}
+ ]},options:{maintainAspectRatio:false,responsive:true,interaction:{mode:"index",intersect:false},
+  scales:{x:{stacked:true,grid:{display:false}},y:{stacked:true,grid:{color:"#E4E8EF"},ticks:{callback:v=>"$"+(v/1000)+"k"}}},
+  plugins:{legend:{position:"bottom",labels:{boxWidth:11,boxHeight:11,padding:12,usePointStyle:true}},
+   tooltip:{callbacks:{label:c=>c.dataset.label+": "+fmt(c.parsed.y,0)}}}}});
+}
+try{renderCredit();}catch(e){console.error("credit charts",e);}
+</script></body></html>
